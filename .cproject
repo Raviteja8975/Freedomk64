@@ -3,21 +3,27 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1348202584">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1348202584" moduleId="org.eclipse.cdt.core.settings" name="Debug">
-				<externalSettings/>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/K64F-mbed-KDS-Template"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/K64F-mbed-KDS-Template/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="K64F-mbed-KDS-Template" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
 				<extensions>
 					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
-					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1348202584" name="Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug">
 					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1348202584." name="/" resourcePath="">
-						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.875009081" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.875009081" name="Cross ARM GCC" nonInternalBuilderId="ilg.gnuarmeclipse.managedbuild.cross.builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1837061206" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.1178959720" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.125078188" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
@@ -40,12 +46,15 @@
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.2036268570" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.1341802496" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1940089640" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
-							<builder buildPath="${ProjDirPath}/Debug" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1938976624" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
+							<builder buildPath="${workspace_loc:/K64F-mbed-KDS-Template}/Debug" id="cdt.managedbuild.builder.gnu.cross.716055675" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.builder.gnu.cross"/>
 							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.813267852" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1361268816" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1629872960" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="&quot;__STACK_SIZE=0x0400&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;__HEAP_SIZE=0x4000&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.903119709" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtx/TARGET_M4/TOOLCHAIN_GCC&quot;"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1526663322" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
@@ -54,6 +63,11 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1200461194" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="&quot;CPU_MK64FN1M0VMD12&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;CPU_MK64FN1M0VLL12&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;TARGET_K64F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;__CORTEX_M4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;TOOLCHAIN_GCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;__FPU_PRESENT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;ARM_MATH_CM4&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1937782419" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
@@ -88,6 +102,13 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/mbed-src/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/mbed-src/targets/cmsis/TARGET_Freescale/TARGET_K64F&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/mbed-src/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K64F/device/MK64F12&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtos&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs/fat&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs/fat/ChaN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs/sd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtx/TARGET_M4/TOOLCHAIN_GCC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Includes&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Includes/device&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/platform/CMSIS/Include&quot;"/>
@@ -99,6 +120,19 @@
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/platform/hal/port&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/platform/hal/gpio&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/rtos&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/BasicMathFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/CommonTables&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/ComplexMathFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/ControllerFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/FastMathFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/FilteringFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/MatrixFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/StatisticsFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/SupportFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/TransformFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/dsp&quot;"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.731832279" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
@@ -135,6 +169,13 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/mbed-src/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/mbed-src/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/mbed-src/targets/cmsis/TARGET_Freescale/TARGET_K64F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtos&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs/fat&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs/fat/ChaN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/fs/sd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/rtos/rtx/TARGET_M4/TOOLCHAIN_GCC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Includes&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Includes/device&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/platform/CMSIS/Include&quot;"/>
@@ -146,10 +187,28 @@
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/platform/hal/port&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/platform/hal/gpio&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${KSDK_PATH_1_0_0_BETA}/rtos&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/BasicMathFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/CommonTables&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/ComplexMathFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/ControllerFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/FastMathFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/FilteringFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/MatrixFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/StatisticsFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/SupportFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/cmsis_dsp/TransformFunctions&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/dsp/dsp&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.569484654" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="&quot;CPU_MK64FN1M0VMD12&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;CPU_MK64FN1M0VLL12&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;TARGET_K64F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;__CORTEX_M4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;TOOLCHAIN_GCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;__FPU_PRESENT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;ARM_MATH_CM4&quot;"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.420528114" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
 							</tool>
@@ -319,4 +378,7 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="K64F-mbed-KDS-Template.null.1153001937" name="K64F-mbed-KDS-Template"/>
+	</storageModule>
 </cproject>

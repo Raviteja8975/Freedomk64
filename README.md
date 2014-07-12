@@ -7,3 +7,6 @@ Must reconfigure KDS to use the ARM Inc. supported toolchain on launchpad (GCC A
 
 http://mcuoneclipse.com/2014/07/11/switching-arm-gnu-tool-chain-and-libraries-in-kinetis-design-studio/
 
+As of July 2014 mbed does not have a standard USBHost library for K64F, see:
+
+https://mbed.org/questions/3940/USBHostSerial-library-compatible-with-K6/

@@ -32,6 +32,6 @@ int main() {
 
     while (true) {
         led1 = !led1;
-        Thread::wait(500);
+        Thread::wait(250);
     }
 }

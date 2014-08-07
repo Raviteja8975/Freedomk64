@@ -1,7 +1,7 @@
 K64F-mbed-KDS-Template
 ======================
 
-Working Freescale Kinetis Design Studio 1.0.1 Project with mbed Libraries for K64F Freedom Board
+Working Freescale Kinetis Design Studio 1.1.0 Project with mbed Libraries for K64F Freedom Board
 
 Must reconfigure KDS to use the ARM Inc. supported toolchain on launchpad (GCC ARM Embedded) as described:
 

@@ -31,7 +31,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *---------------------------------------------------------------------------*/
-#include "error.h"
+#include "mbed_error.h"
 
 #if   defined (__CC_ARM)
 #pragma O3
@@ -241,6 +241,9 @@ osThreadDef_t os_thread_def_main = {(os_pthread)main, osPriorityNormal, 0, NULL}
 #elif defined(TARGET_STM32F407) || defined(TARGET_F407VG)
 #define INITIAL_SP            (0x20020000UL)
 
+#elif defined(TARGET_STM32F401RE)
+#define INITIAL_SP            (0x20018000UL)
+
 #elif defined(TARGET_LPC1549)
 #define INITIAL_SP            (0x02009000UL)
 
@@ -249,6 +252,9 @@ osThreadDef_t os_thread_def_main = {(os_pthread)main, osPriorityNormal, 0, NULL}
 
 #elif defined(TARGET_NRF51822)
 #define INITIAL_SP            (0x20004000UL)
+
+#elif defined(TARGET_STM32F411RE)
+#define INITIAL_SP            (0x20020000UL)
 
 #else
 #error "no target defined"
